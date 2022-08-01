@@ -1,17 +1,24 @@
 *{
     margin: 5px;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    
-
+    box-sizing: border-box; 
+}
+@font-face {
+    font-family: bangers;
+    src: url(./Bangers/Bangers.ttf);
 }
 body{
-    background-image: url("img/fondo.png");
-
+    background-color: #26bded;
 }
+
 nav{
     background-image: url("img/brillos.png") ;
+    z-index: 100;
+}
+
+a {
+    font-family: bangers;
+    font-size: 36px;
 
 }
 
@@ -20,9 +27,17 @@ nav{
     width: 5%;
 }
 .inicio{
-    display: flex;
-    margin: 100px auto;
-    
+    display: flex;    
+    justify-content:center;
+}
+
+.animator span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    transition: 0.9s;
 }
 .container{
     max-width: 420px;
@@ -37,6 +52,8 @@ nav{
     justify-content: space-between;
     border: 1px solid black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    
 }
 button{
     border: 4px solid black;
@@ -56,14 +73,18 @@ footer{
 }
 
 #start-text{
-    font-size: 26px;
+    font-family: bangers;
+    font-size: 36px;
 
 }
+
 #group-btn{
     display: flex;
     width: 100%;
+    z-index: 100;
 }
 #group-btn > button > img{
     width: 100%;
     padding: 5px 5px 5px 5px;
+    z-index: 100;
 }
