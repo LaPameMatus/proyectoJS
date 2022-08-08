@@ -2,17 +2,38 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+@font-face {
+  font-family: bangers;
+  src: url(./Bangers/Bangers.ttf);
+}
+body {
+  background-color: #26bded;
+}
+
+nav {
+  background-image: url("img/brillos.png");
+  z-index: 100;
+}
+
 header {
   text-align: center;
   background-color: black;
-
   color: white;
   padding: 10px 0;
+  z-index: 99;
+  height: 100px;
+  position: relative;
 }
 .container {
   max-width: 700px;
   margin: auto;
   padding: 20px;
+  z-index: 100;
+  position: relative;
+  background-color: #26bded;
+}
+#imagen {
+  width: 5%;
 }
 
 section {
@@ -26,11 +47,11 @@ label {
   padding: 7px;
   border-radius: 7px;
   cursor: pointer;
-  border: 1px dashed #ccc;
+
   margin-bottom: 3px;
 }
 label:hover {
-  background: #cec0fc;
+  background: #0e62f1;
 }
 
 button {
@@ -53,4 +74,13 @@ h2 {
 #resultado {
   font-size: 30px;
   color: darkred;
+}
+
+.animator span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: 0.9s;
 }
