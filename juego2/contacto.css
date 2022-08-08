@@ -5,12 +5,32 @@
   font-family: sans-serif;
 }
 
+@font-face {
+  font-family: bangers;
+  src: url(./Bangers/Bangers.ttf);
+}
+
+body {
+  background-color: #26bded;
+}
+
+nav {
+  background-image: url("img/brillos.png");
+  z-index: 100;
+}
+
+#imagen {
+  width: 5%;
+}
+
 .titulo-contacto {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
 .cont1 {
+  position: relative;
   background-color: #6a6a6a;
   width: 100%;
   max-width: 820px;
@@ -23,6 +43,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 100;
 }
 .fo1 {
   width: auto;
@@ -100,10 +121,19 @@ article > ul > li > a {
   list-style: none;
 }
 .copy {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 400;
   text-align: center;
   background-color: gray;
   margin: 0;
   padding: 0;
+}
+
+.animator span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: 0.9s;
 }
