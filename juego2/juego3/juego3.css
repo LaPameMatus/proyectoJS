@@ -4,6 +4,19 @@
   font-family: sans-serif;
 }
 
+@font-face {
+  font-family: bangers;
+  src: url(./Bangers/Bangers.ttf);
+}
+body {
+  background-color: #26bded;
+}
+
+nav {
+  background-image: url("img/brillos.png");
+  z-index: 100;
+}
+
 .contenedor {
   background-image: url(/juego2/juego3/img/campo.png);
   padding: 0px;
@@ -13,7 +26,13 @@
   background-color: bisque;
   border: solid 3px black;
   margin-top: 0px;
+  z-index: 101;
+  position: relative;
 }
+#imagen {
+  width: 5%;
+}
+
 #player {
   background-image: url(/juego2/juego3/img/pelota.png);
   background-position: center;
@@ -26,6 +45,7 @@
   border-radius: 29px;
   position: absolute;
   transition: all 0.3s;
+  z-index: 101;
 }
 .pointer {
   background-image: url(/juego2/juego3/img/estadio2.png);
@@ -33,11 +53,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: blue;
-  height: 30px;
+  height: 90px;
   margin-top: 30px;
   border-bottom: 0px;
   color: white;
   font-size: 20px;
   text-align: center;
   padding: 10px 0px;
+  z-index: 101;
+}
+.animator span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: 0.9s;
 }
