@@ -1,31 +1,61 @@
 *{
-    margin: 5px;
-    padding: 0;
-    box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px; 
 }
 @font-face {
     font-family: bangers;
-    src: url(./Bangers/Bangers.ttf);
+    src: url(./fuentes/Bangers.ttf);
 }
+
 body{
-    background-color: #26bded;
+    background-color: #3B3E4D;
+    width: 100%;
+    height: 100vh;
+    
+    
 }
-
-nav{
-    background-image: url("img/brillos.png") ;
-    z-index: 100;
+/* imagen de inicio */
+#imagen{    
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;  
+    display: flex;
+    justify-content: center; 
 }
-
-a {
-    font-family: bangers;
+#imagen img{
+    width: 500px;
+    height: 100%;
+    transition: 1s;
+    
+}
+#imagen img:hover{
+    transform: translateX(40%);
+    filter: brightness(80%);
+}
+#imagen div{
+    font-family: bangers ;
     font-size: 36px;
 
 }
-
-
-#imagen{
-    width: 5%;
+nav{
+    position: relative;
+    z-index: 100;
 }
+a {
+    font-family: bangers;
+    font-size: 24px;
+}
+.nav-link{
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+button{
+    border: 4px solid black;
+    margin: 5px;
+}
+
 .inicio{
     display: flex;    
     justify-content:center;
@@ -33,6 +63,12 @@ a {
     z-index: 100;
 }
 
+
+ul{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
 .animator span {
     position: absolute;
     width: 50px;
@@ -44,33 +80,23 @@ a {
 }
 .container{
     max-width: 420px;
-    height: 100vh;
     max-height: 745px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: #ffb74d;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border: 1px groove rgb(67, 3, 151);
+    box-shadow: 5px 5px 5px rgba(51, 1, 117, 0.3);
     z-index: 100;
     
-}
-button{
-    border: 4px solid black;
-    margin: 5px;
-}
-footer{
-    text-align: center;
-    padding: 10px;
 }
 #result{
     text-align: center;
 }
 #result img{
-    width: 20%;
+    width: 40%;
     border: 1px solid black;
     margin: 5px;
 }
@@ -78,17 +104,70 @@ footer{
 #start-text{
     font-family: bangers;
     font-size: 36px;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    z-index: 100;
 
 }
 
 #group-btn{
     display: flex;
-    width: 100%;
-    
+    width: 90%;
+
 }
 
 #group-btn > button > img{
-    width: 100%;
+    width:90%;
     padding: 5px 5px 5px 5px;
     z-index: 100;
 }
+.foot-cont {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    position: relative; 
+    z-index: 100; 
+    background-color: #0093e9;
+    background-image: linear-gradient(
+        160deg,
+        #0093e9 13%,
+        #80d0bd 66%,
+        #ffffff 100%
+    );
+  }
+  .part1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  article {
+    width: 80%;
+  }
+  article > ul {
+    list-style: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  article > ul > li {
+    padding: 5px 0px;
+}
+article > ul > li > a {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+.copy {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+

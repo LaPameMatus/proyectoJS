@@ -1,6 +1,6 @@
 // fondo
 const animator= document.querySelector('.animator');
-const colors=['#04FF00 ', '#F0FF00 ', '#0018B2 ','#FF01F3','#FF0101 ',];
+const colors=['#604d8a ', '#025573 ','#7a5587 ',];
 
 const figures=()=>{
     for(let i=0; i <= 25; i++){
@@ -15,10 +15,11 @@ const figures=()=>{
             figure.style.top =innerHeight * Math.random() +'px'
             figure.style.left = innerWidth * Math.random()+ 'px'
 
-        },5000)
+        },2500)
     }
 }
 figures()
+
 // js piedra-papel-tijera
 
 const ROCK = "rock";
