@@ -1,18 +1,20 @@
+//creamos el evento de pasar el mouse
 document.getElementById("player").addEventListener("mouseover", sumarPuntos);
 
 var puntos = 0;
-var tiempo = 10;
+var tiempo = 20;
 var necesarios = 30;
 function sumarPuntos() {
   puntos++;
   document.getElementById("puntos").innerHTML =
     "Puntos: <b> " + puntos + "/" + necesarios + "</b>";
-
+  //declaracion de variables para movimientos
   let randNum = Math.round(Math.random() * 400);
   let randNum2 = Math.round(Math.random() * 400);
-
+  //movimientos de la pelota
   document.getElementById("player").style.margin = randNum + "px";
   document.getElementById("player").style.marginLeft = randNum2 + "px";
+  //condicion de puntos
   if (puntos == 30) {
     alert("ganaste Goleador");
     tiempo = 10;
@@ -36,7 +38,7 @@ const interval = setInterval(function () {
   restarTiempo();
 }, 1000);
 
-// fondo
+// fondo animado
 const animator = document.querySelector(".animator");
 const colors = ["#04FF00 ", "#F0FF00 ", "#0018B2 ", "#FF01F3", "#FF0101 "];
 

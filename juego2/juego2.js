@@ -1,14 +1,15 @@
+//arreglo repuestas correctas
 correctas = [3, 1, 2, 2, 3];
 
-//arreglo donde se guardan las repuestas del usuario}
+//arreglo donde se guardan las repuestas del jugador
 opcion_elegida = [];
 cantidad_correctas = 0;
 //funcion que toma el num de preg y el imput elegido de esa pregunta
 function repuesta(num_pregunta, seleccionada) {
-  //guardo la rep elegida
+  //guardo la repuesta elegida
   opcion_elegida[num_pregunta] = seleccionada.value;
   // el siguiente codigo es para poner el color en blanco
-  //el fondo de los inputs para cuando elige otra ocpcion
+  //el fondo de los inputs para cuando elige otra opcion
   //armo el id para seleccionar el section correspondiente
   id = "p" + num_pregunta;
   labels = document.getElementById(id).childNodes;
@@ -31,7 +32,7 @@ function corregir() {
   document.getElementById("resultado").innerHTML = cantidad_correctas;
 }
 
-// fondo
+// fondo animado
 const animator = document.querySelector(".animator");
 const colors = ["#04FF00 ", "#F0FF00 ", "#0018B2 ", "#FF01F3", "#FF0101 "];
 
