@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: bangers;
+  src: url(./Bangers/Bangers.ttf);
+}
+body {
+  background-color: #26bded;
+}
+
+nav {
+  background-image: url("img/brillos.png");
+  z-index: 100;
+}
+
+.contenedor {
+  background-image: url(/juego2/juego3/img/campo.png);
+  padding: 0px;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: bisque;
+  border: solid 3px black;
+  margin-top: 0px;
+  z-index: 101;
+  position: relative;
+}
+#imagen {
+  width: 5%;
+}
+
+#player {
+  background-image: url(/juego2/juego3/img/pelota.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 29px;
+  position: absolute;
+  transition: all 0.3s;
+  z-index: 101;
+}
+.pointer {
+  background-image: url(/juego2/juego3/img/estadio2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
+  height: 90px;
+  margin-top: 30px;
+  border-bottom: 0px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0px;
+  z-index: 101;
+}
+
+.foot-cont {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+
+  background-color: #0093e9;
+  background-image: linear-gradient(
+    160deg,
+    #0093e9 13%,
+    #80d0bd 66%,
+    #ffffff 100%
+  );
+}
+.part1 {
+  display: flex;
+  justify-content: space-between;
+}
+article {
+  width: 80%;
+}
+article > ul {
+  list-style: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+}
+article > ul > li {
+  padding: 5px 0px;
+}
+article > ul > li > a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+.copy {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+.animator span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: 0.9s;
+}
